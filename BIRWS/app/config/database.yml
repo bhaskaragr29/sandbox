@@ -1,0 +1,6 @@
+database:
+    driver: pdo_mysql
+    dbhost: locahost
+    dbname: bir_sportsbook
+    user: root
+    password: admin

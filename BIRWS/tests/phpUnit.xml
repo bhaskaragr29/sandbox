@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="true"
+         syntaxCheck="false"
+         bootstrap="phpUnitbootstrap.php"
+        >
+    <logging>
+        <log type="coverage-html" target="../build/coverage" title="BIR Live Calendar"
+             charset="UTF-8" yui="true" highlight="true"
+             lowUpperBound="35" highLowerBound="70"/>
+        <log type="coverage-clover" target="../build/logs/clover.xml"/>
+        <log type="junit" target="../build/logs/junit.xml" logIncompleteSkipped="false"/>
+    </logging>
+    <testsuite>
+        <testsuite name="Paddy Power Stream Mapping">
+            <directory>./src</directory>
+        </testsuite>
+    </testsuite>
+    <filter>
+        <whitelist>
+            <directory suffix="Test.php">../src</directory>
+        </whitelist>
+    </filter>
+</phpunit>

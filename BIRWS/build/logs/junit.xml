@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="1" assertions="0" failures="0" errors="0" time="0.036895">
+    <testsuite name="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/workspace/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" namespace="BIR\Component\LiveCalendar\Repositry" fullPackage="BIR.Component.LiveCalendar.Repositry" tests="1" assertions="0" failures="0" errors="0" time="0.036895">
+      <testcase name="saveNew" class="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/workspace/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" line="61" assertions="0" time="0.036895"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
