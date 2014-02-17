@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="1" assertions="0" failures="0" errors="0" time="0.036895">
-    <testsuite name="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/workspace/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" namespace="BIR\Component\LiveCalendar\Repositry" fullPackage="BIR.Component.LiveCalendar.Repositry" tests="1" assertions="0" failures="0" errors="0" time="0.036895">
-      <testcase name="saveNew" class="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/workspace/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" line="61" assertions="0" time="0.036895"/>
+  <testsuite name="" tests="17" assertions="0" failures="0" errors="0" time="3.608319">
+    <testsuite name="LiveCalendarCronTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/Command/LiveCalendarCronTest.php" tests="1" assertions="0" failures="0" errors="0" time="0.000889">
+      <testcase name="saveNew" class="LiveCalendarCronTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/Command/LiveCalendarCronTest.php" line="12" assertions="0" time="0.000889"/>
+    </testsuite>
+    <testsuite name="LiveCalendarWebTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/LiveCalendarWebTest.php" tests="8" assertions="0" failures="0" errors="0" time="0.140206">
+      <testcase name="testSave" class="LiveCalendarWebTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/LiveCalendarWebTest.php" line="24" assertions="0" time="0.124241"/>
+      <testcase name="testSaveFail" class="LiveCalendarWebTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/LiveCalendarWebTest.php" line="31" assertions="0" time="0.004062"/>
+      <testcase name="testUpdate" class="LiveCalendarWebTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/LiveCalendarWebTest.php" line="38" assertions="0" time="0.001949"/>
+      <testcase name="testUpdateFail" class="LiveCalendarWebTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/LiveCalendarWebTest.php" line="45" assertions="0" time="0.001963"/>
+      <testcase name="getbyIds" class="LiveCalendarWebTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/LiveCalendarWebTest.php" line="53" assertions="0" time="0.001962"/>
+      <testcase name="getbyTypeIds" class="LiveCalendarWebTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/LiveCalendarWebTest.php" line="61" assertions="0" time="0.002024"/>
+      <testcase name="test404" class="LiveCalendarWebTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/LiveCalendarWebTest.php" line="68" assertions="0" time="0.001994"/>
+      <testcase name="testOtherUrl" class="LiveCalendarWebTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/LiveCalendarWebTest.php" line="75" assertions="0" time="0.002011"/>
+    </testsuite>
+    <testsuite name="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" namespace="BIR\Component\LiveCalendar\Repositry" fullPackage="BIR.Component.LiveCalendar.Repositry" tests="8" assertions="0" failures="0" errors="0" time="3.467224">
+      <testcase name="saveNew" class="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" line="61" assertions="0" time="1.234751"/>
+      <testcase name="update" class="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" line="68" assertions="0" time="0.317120"/>
+      <testcase name="saveFailNoData" class="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" line="75" assertions="0" time="0.304757"/>
+      <testcase name="saveFailNoType" class="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" line="82" assertions="0" time="0.372796"/>
+      <testcase name="updateFail" class="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" line="89" assertions="0" time="0.303827"/>
+      <testcase name="getAll" class="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" line="97" assertions="0" time="0.313779"/>
+      <testcase name="getByType" class="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" line="105" assertions="0" time="0.295252"/>
+      <testcase name="getByIds" class="BIR\Component\LiveCalendar\Repositry\LiveRepositryTest" file="/home/bhaskar/PHPworkspace/BIRWS/BIRWS/tests/src/BIR/Component/LiveCalendar/Repositry/LiveCalendarRepositryTest.php" line="113" assertions="0" time="0.324942"/>
     </testsuite>
   </testsuite>
 </testsuites>

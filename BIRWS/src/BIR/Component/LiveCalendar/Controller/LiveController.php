@@ -36,11 +36,11 @@ class LiveController extends Base {
 	public function createUpdateLiveCalendar($id) {
 		$live_data = new LiveCalendarRepositry ( $this->database );
 		$data = $this->request->request->all ();
-		$result = $live_data->save ( $data );
 		$is_valid = $this->validate ( $data );
-		if ($result && $is_valid) {
+		if ($is_valid) {
+		    $result = $live_data->save ( $data );
 			$this->setContent ( array (
-					'live_calendar' => $live_data->find ( array (
+					'live_calendar' => $live_data->findByIds( array (
 							$result 
 					) ) 
 			) );
@@ -52,7 +52,8 @@ class LiveController extends Base {
 		}
 		return $this->sendResponse ();
 	}
-	public function validate($data) {
+	
+	private function validate($data) {
 		if (empty ( $data ['data'] )) {
 			return FALSE;
 		}
